@@ -1,0 +1,20 @@
+footer {
+  background-color: #ffc107;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+footer div a {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .footer-navLinks {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsletter {
+    margin-top: 30px;
+  }
+}

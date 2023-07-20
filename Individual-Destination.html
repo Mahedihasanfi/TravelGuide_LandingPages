@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Guide | Helsinki</title>
+  <meta name="description" content="Travel Guide: Helsinki">
+  <meta name="Mahedi" content="Landing-Page">
+
+  <link rel="stylesheet" href="/css/PageGeneralHeader.css">
+  <link rel="stylesheet" href="/css/Individual-Destination.css">
+  <link rel="stylesheet" href="/css/PageFooter.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="nav-bg-color">
+    <section class="container headerView">
+      <div class="search-area">
+        <form class="input-group">
+          <img src="/icons/search-white.svg" alt="Search">
+          <input class="form-control" id="search-field" name="query" placeholder="Search" type="text">
+        </form>
+      </div>
+      <div Class="globe-icon">
+        <img src="/icons/globe-white.svg" alt="globe-icon">
+      </div>
+      <div class="navbar navbar-expand-lg barView">
+        <div>
+          <div class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <img class="menu-bars" src="/icons/three-bars-white.svg" alt="menu">
+          </div>
+          <div class="offcanvas offcanvas-end " style="background-color: rgb(20, 178, 196);" tabindex="-1"
+            id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Quick Links</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="/TravelLandingPage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="/Destinations-Gallery.html">Destinations</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="/Contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="mb-0">
+  </header>
+
+  <section id="Helsinki" class="mt-4 container">
+    <h2 class="mb-4">Helsinki</h2>
+    <div>
+      <p>Helsinki, the capital of Finland, harmoniously combines a peaceful work-life balance, stunning
+        natural landscapes, and efficient smart transportation.</p>
+      <p class="mt-2">The city prioritizes the well-being of
+        its residents, allowing for flexibility and leisure time alongside work commitments. With an
+        abundance of green spaces, parks, and forests, Helsinki provides an escape into nature just a
+        stone's throw away from the bustling city center. The city's smart transportation systems,
+        including an extensive public transport network and innovative solutions like electric vehicles
+        and cycling infrastructure, ensure seamless and eco-friendly mobility. </p>
+      <p class="mt-2 mb-4">
+        Helsinki epitomizes a
+        modern urban environment that seamlessly integrates work, nature, and sustainable transportation
+        for a high quality of life.</p>
+    </div>
+    <div class="images-responsive mt-3">
+      <div class="text-position">
+        <img src="/images/Helsinki/Cathedral.jpg" alt="Uspenski" class="img-fluid rounded-start-2">
+        <div class="image-text">Uspenski</div>
+      </div>
+      <div class="text-position">
+        <img src="/images/Helsinki/Cherry Garden.jpg" alt="Roihuvuori" class="img-fluid">
+        <div class="image-text">Roihuvuori</div>
+      </div>
+      <div class="text-position">
+        <img src="/images/Helsinki/SeaLife.jpg" alt="Satama" class="img-fluid">
+        <div class="image-text">Satama</div>
+      </div>
+      <div class="text-position">
+        <img src="/images/Helsinki/Festivals.jpg" alt="Kaivopuisto" class="img-fluid rounded-end-2">
+        <div class="image-text">Kaivopuisto</div>
+      </div>
+    </div>
+    <div class="images-responsive mt-3">
+      <div class="text-position">
+        <img src="/images/Helsinki/Nature.jpg" alt="Lammassaari" class="img-fluid rounded-start-2">
+        <div class="image-text">Lammassaari</div>
+      </div>
+      <div class="text-position">
+        <img src="/images/Helsinki/Transport.jpg" alt="Aleksanterinkatu" class="img-fluid">
+        <div class="image-text">Aleksanterinkatu</div>
+      </div>
+      <div class="text-position">
+        <img src="/images/Helsinki/Architecture.jpg" alt="Library" class="img-fluid">
+        <div class="image-text">Library</div>
+      </div>
+      <div class="text-position">
+        <img src="/images/Helsinki/Lake.jpg" alt="Lake" class="img-fluid rounded-end-2">
+        <div class="image-text">Lake</div>
+      </div>
+    </div>
+
+    <h2 class="mt-4">Book Your Trip</h2>
+
+    <div id="Form">
+      <form class="bookingForm">
+        <div class="select-destination">
+          <label for="destination">Destination</label>
+          <br>
+          <select class="form-select flex-grow-1" id="destination" name="destination">
+            <option selected>Select destination</option>
+            <option value="Paris">Paris</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="Sydney">Sydney</option>
+            <option value="San Francisco">San Francisco</option>
+          </select>
+        </div>
+        <div class="from flex-grow-1">
+          <label for="from">From</label>
+          <br>
+          <input class="form-control" type="date" name="from" id="from">
+        </div>
+        <div class="to flex-grow-1">
+          <label for="to">To</label>
+          <br>
+          <input class="form-control" type="date" name="to" id="to">
+        </div>
+        <div class="guest">
+          <label for="guests">Guests</label>
+          <br>
+          <input class="form-control" type="number" name="guests" id="guests" min="1" placeholder="2">
+        </div>
+        <div class="submit flex-grow-1">
+          <button class="form-control rounded-5 bg-warning" type="submit">
+            <img src="./icons/arrow-right.svg" alt="arrow">
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="mt-4">
+    <div class="container">
+      <div class="row footer-navLinks">
+        <div class="col ">
+          <div class="d-flex flex-column ">
+            <h5>Links</h5>
+            <a href="/TravelLandingPage.html">Home</a>
+            <a href="/Destinations-Gallery.html">Destinations</a>
+            <a href="/Individual-Destination.html">About</a>
+            <a href="/Contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="col">
+          <h5 class="newsletter">Newsletter</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+          </p>
+          <div>
+            <form class="input-group">
+              <input autocomplete="email" class="form-control" name="email" placeholder="Email" required type="email">
+              <button class="btn btn-success" type="submit">
+                Subscribe
+                <img src="./icons/arrow-right-white.svg" alt="right-direction">
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

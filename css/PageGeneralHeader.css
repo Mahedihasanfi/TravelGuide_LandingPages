@@ -1,0 +1,55 @@
+* {
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.nav-bg-color {
+    background-image: url('/images/header.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.headerView {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 20px;
+}
+
+
+.navbar.navbar-expand-lg.barView {
+    justify-content: flex-end;
+}
+
+.search-area {
+    margin-top: 10px;
+}
+
+.globe-icon {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.menu-bars {
+    height: 1.6rem;
+}
+
+div.navbar-toggler {
+    padding-right: 0;
+}
+
+#search-field {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+#search-field::placeholder {
+    color: white;
+}
+
+hr {
+    border: 1px solid white;
+}

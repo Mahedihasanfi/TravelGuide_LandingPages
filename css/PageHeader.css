@@ -1,0 +1,102 @@
+* {
+  font-family: Montserrat;
+  font-size: 20px;
+}
+
+.background-imageClass {
+  background-image: url('/images/header.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.headerView {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 20px;    
+}
+
+.navbar.navbar-expand-lg.barView {
+  justify-content: flex-end;
+}
+
+.search-area{
+  margin-top: 10px;
+}
+
+.globe-icon {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.menu-bars {
+  height: 1.6rem;
+  padding: 0;
+  margin: 0;
+}
+
+#search-field {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+#search-field::placeholder {
+  color: white;
+}
+
+hr {
+  border: 1px solid white;
+}
+
+.textDecorationClass {
+  font-weight: bolder;
+  width: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.bookingForm {
+  display: flex;
+  margin-bottom: 4px;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+@media (max-width: 768px) {
+  .bookingForm {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: column;
+    grid-template-rows: repeat minmax(0, 1fr);
+    grid-template-areas:
+      "select-destination select-destination select-destination"
+      "from to guest"
+      "submit submit submit";
+  }
+
+  .select-destination {
+    grid-area: select-destination;
+  }
+
+  .from {
+    grid-area: from;
+  }
+
+  .to {
+    grid-area: to;
+  }
+
+  .guest {
+    grid-area: guest;
+  }
+
+  .submit {
+    grid-area: submit;
+  }
+
+}

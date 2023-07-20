@@ -1,0 +1,60 @@
+.textClass {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 3px;
+}
+
+.image-position {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.imageClass {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+
+.image-text-city {
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  font-weight: bolder;
+  width: 100%;
+  padding: 25px 0;
+}
+
+.image-text-country {
+  position: absolute;
+  top: 94%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(245, 241, 241);
+  padding: 25px 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .textClass {
+    flex-direction: column;
+  }
+
+  .imageClass {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .imgaeRadiusClass {
+    border-radius: 4px;
+  }
+}

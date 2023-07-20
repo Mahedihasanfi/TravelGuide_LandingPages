@@ -1,0 +1,54 @@
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.text-position {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.images-responsive {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.image-text {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.image-container:hover img {
+  transform: scale(.90);
+  position: absolute;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .images-responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  #destinations-galary img {
+    border-radius: 6px;
+  }
+}

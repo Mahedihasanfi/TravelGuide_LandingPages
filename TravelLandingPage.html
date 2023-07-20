@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide</title>
+    <meta name="description" content="Travel agency: Homepage">
+    <meta name="Mahedi" content="Landing-Page">
+
+    <link rel="stylesheet" href="/css/PageHeader.css">
+    <link rel="stylesheet" href="/css/destinations.css">
+    <link rel="stylesheet" href="/css/PageFooter.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="background-imageClass text-white d-flex flex-column justify-content-between">
+        <section class="nav-bg-color">
+            <span class="container headerView">
+                <div class="search-area">
+                    <form class="input-group">
+                        <img src="/icons/search-white.svg" alt="Search">
+                        <input class="form-control" id="search-field" name="query" placeholder="Search" type="text">
+                    </form>
+                </div>
+                <div Class="globe-icon">
+                    <img src="/icons/globe-white.svg" alt="globe-icon">
+                </div>
+                <div class="navbar navbar-expand-lg barView">
+                    <div>
+                        <div class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <img class="menu-bars" src="/icons/three-bars-white.svg" alt="menu">
+                        </div>
+                        <div class="offcanvas offcanvas-end " style="background-color: rgb(20, 178, 196);" tabindex="-1"
+                            id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Quick Links</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active text-white" aria-current="page" href="/TravelLandingPage.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white"
+                                            href="/Destinations-Gallery.html">Destinations</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" 
+                                            href="/Contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </section>
+
+        <section class="container ">
+            <div class="d-flex flex-column">
+                <div class="text-white">
+                    <p class="text-uppercase fw-bold">Your Long Travel</p>
+                    <div class="w-75">
+                        <h1 class="textDecorationClass">Book your next destination</h1>
+                    </div>
+                </div>
+
+                <div id="Form">
+                    <form class="bookingForm mb-5">
+                        <div class="select-destination">
+                            <label for="destination">Destination</label>
+                            <br>
+                            <select class="form-select flex-grow-1" id="destination" name="destination">
+                                <option selected>Select destination</option>
+                                <option value="Paris">Paris</option>
+                                <option value="Tokyo">Tokyo</option>
+                                <option value="Sydney">Sydney</option>
+                                <option value="San Francisco">San Francisco</option>
+                            </select>
+                        </div>
+                        <div class="from flex-grow-1">
+                            <label for="from">From</label>
+                            <br>
+                            <input class="form-control" type="date" name="from" id="from">
+                        </div>
+                        <div class="to flex-grow-1">
+                            <label for="to">To</label>
+                            <br>
+                            <input class="form-control" type="date" name="to" id="to">
+                        </div>
+                        <div class="guest">
+                            <label for="guests">Guests</label>
+                            <br>
+                            <input class="form-control" type="number" name="guests" id="guests" min="1" placeholder="2">
+                        </div>
+                        <div class="submit flex-grow-1">
+                            <button class="form-control rounded-5 bg-warning" type="submit">
+                                <img src="./icons/arrow-right.svg" alt="arrow">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section id="destinations" class="container">
+        <h2 class="mt-4 mb-3">Destinations</h2>
+        <div class="d-flex justify-content-between column-gap-3 textClass">
+            <div>
+                <p>Lorem ipsum dolor sit amet, adventure travel mountains, beach
+                    resorts and cultural experiences await. Pack your bags and get
+                    ready to <strong>explore the world!</strong> From bustling cities to tranquil
+                    countryside getaways, there's a destination for every type of
+                    traveler.
+                </p>
+            </div>
+            <div>
+                <p>If you're a culture lover, the <em>historic cities</em> of London and Edinburgh should be at the
+                    top of
+                    your list. Walk the streets of London's West End, marvel at the architecture of Big Ben and
+                    Buckingham
+                    Palace, and take in a show at the Globe Theatre. In Edinburgh, visit the Royal Mile, explore the
+                    castle, and
+                    sample the local fare at the city's world-famous restaurants.
+                </p>
+            </div>
+            <div>
+                <p>For those seeking a bit of relaxation, <strong>head to the spas</strong> and
+                    resorts of the English countryside. Indulge in a luxurious
+                    massage or take a dip in a hot spring. If you're looking for
+                    something a bit more active, strap on your hiking boots and
+                    tackle the rugged trails of the coastal cliffs.
+                </p>
+            </div>
+        </div>
+
+        <div class="imageClass">
+            <div class="image-position">
+                <img src="/images/destinations/paris.jpg" alt="Paris"
+                    class="img-fluid rounded-start-2 imgaeRadiusClass">
+                <div class="image-text-city ">Paris</div>
+                <div class="image-text-country">France</div>
+            </div>
+            <div class="image-position">
+                <img src="/images/destinations/san-francisco.jpg" alt="USA" class="img-fluid imgaeRadiusClass">
+                <div class="image-text-city">San Francisco</div>
+                <div class="image-text-country">United States</div>
+            </div>
+            <div class="image-position">
+                <img src="/images/destinations/sydney.jpg" alt="Sydney" class="img-fluid imgaeRadiusClass">
+                <div class="image-text-city">Sydney</div>
+                <div class="image-text-country">Australia</div>
+            </div>
+            <div class="image-position">
+                <img src="/images/destinations/tokyo.jpg" alt="Tokyo" class="img-fluid rounded-end-2 imgaeRadiusClass">
+                <div class="image-text-city">Tokyo</div>
+                <h5 class="image-text-country">Japan</h5>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row footer-navLinks">
+                <div class="col ">
+                    <div class="d-flex flex-column ">
+                        <h5>Links</h5>
+                        <a href="/TravelLandingPage.html">Home</a>
+                        <a href="/Destinations-Gallery.html">Destinations</a>
+                        <a href="/Individual-Destination.html">About</a>
+                        <a href="/Contact.html">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h5 class="newsletter">Newsletter</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                        euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+                    </p>
+                    <div>
+                        <form class="input-group">
+                            <input autocomplete="email" class="form-control" name="email" placeholder="Email" required
+                                type="email">
+                            <button class="btn btn-success" type="submit">
+                                Subscribe
+                                <img src="./icons/arrow-right-white.svg" alt="right-direction">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

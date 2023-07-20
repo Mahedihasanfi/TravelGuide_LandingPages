@@ -1,0 +1,33 @@
+.success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: rgb(20, 178, 196);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  animation: successAnimation 2.5s ease;
+  animation-fill-mode: forwards;
+  border-radius: 10px;
+  border: 2px solid rgb(228, 173, 10);
+}
+
+@keyframes successAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.show-position {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}

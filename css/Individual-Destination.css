@@ -1,0 +1,78 @@
+.images-responsive {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+
+.text-position {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.image-text {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bookingForm {
+  border: 2px solid rgb(255, 200, 0);
+  border-radius: 8px;
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  align-items: flex-end;
+  background-color: rgb(20, 178, 196);
+  padding-top: 10px;
+  padding-bottom: 15px;
+  gap: 6px;
+}
+
+@media (max-width: 768px) {
+  .bookingForm {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: column;
+    grid-template-rows: repeat minmax(0, 1fr);
+    grid-template-areas:
+      "select-destination select-destination select-destination"
+      "from to guest"
+      "submit submit submit";
+  }
+
+  .select-destination {
+    grid-area: select-destination;
+  }
+
+  .from {
+    grid-area: from;
+  }
+
+  .to {
+    grid-area: to;
+  }
+
+  .guest {
+    grid-area: guest;
+  }
+
+  .submit {
+    grid-area: submit;
+  }
+
+  .images-responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+  }
+
+  #Helsinki img {
+    border-radius: 6px;
+  }
+
+}
